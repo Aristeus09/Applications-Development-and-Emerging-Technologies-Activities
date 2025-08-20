@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Add User</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="adduser-page">
+
+    <div class="form-container">
+        <h2>Add User</h2>
+        
+        <form name="addUserForm" action="adduser.php" method="POST" onsubmit="return validateForm()">
+            Username: <input type="text" name="uname" required><br>
+            <?php if (!empty($username_error)): ?>
+                <span style="color: red;"><?php echo $username_error; ?></span><br>
+            <?php endif; ?>
+            
+            Password: <input type="password" name="pword" required><br>
+            First Name: <input type="text" name="fname" required><br>
+            Middle Name: <input type="text" name="mname"><br>
+            Last Name: <input type="text" name="lname" required><br>
+            Gender: 
+            <select name="gender" required>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select><br>
+            Email: <input type="email" name="email" required><br>
+            
+            <br>
+            <input type="Submit" name="submit" value="Add Record">
+        </form>
+    </div>
+
+</body>
+</html>

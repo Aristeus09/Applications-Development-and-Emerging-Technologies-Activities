@@ -1,0 +1,292 @@
+/*Login Interface*/
+body {
+	background-image: url('bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+section {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 200px;
+	width: 300px;
+	margin: 100px auto;
+	border-radius: 10px;
+}
+
+.form-label {
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width of the container */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.container {
+	width: 80%;
+	max-width: 600px;
+	margin: 100px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	color: #555;
+}
+
+.greeting {
+	font-size: 22px;
+	font-weight: bold;
+	color: #4CAF50;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+
+.display-users-form {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.display-users-form .container {
+    width: auto;
+    max-width: 90%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.display-users-form h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styles */
+.display-users-form table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.display-users-form table, th, td {
+    border: 1px solid #ddd;
+}
+
+.display-users-form th, td {
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.display-users-form th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.display-users-form tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.display-users-form tr:hover {
+    background-color: #ddd;
+}
+
+/* Form Button Styling */
+.display-users-form .form-container {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.display-users-form .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px; /* Smaller padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    width: 10%; /* Set width to 10% */
+    margin: 0; /* Ensure no margin between the buttons */
+    margin-right: 5px;
+}
+
+.display-users-form .buttons-container {
+    display: flex;
+    justify-content: flex-start; /* Ensures buttons are close to each other */
+    gap: 0; /* Removes any gap between the buttons */
+    margin-top: 20px; /* Optional - Adjust as needed */
+    padding: 0; /* Ensure no padding inside the container */
+}
+
+.display-users-form .button:hover {
+    background-color: #45a049;
+}
+
+/* Table container adjustments */
+.display-users-form .tableContainer {
+    width: 100%;
+    margin: auto;
+}
+
+/*Add User Interface*/
+#adduser-page {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+}
+
+#adduser-page .form-container {
+	width: 40%;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#adduser-page h2 {
+	text-align: center;
+	color: #333;
+}
+
+#adduser-page label {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#adduser-page input[type="text"],
+#adduser-page input[type="password"],
+#adduser-page input[type="email"],
+#adduser-page select {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#adduser-page input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	width: 100%;
+}
+
+#adduser-page input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+#adduser-page .form-container input[type="text"]:focus,
+#adduser-page .form-container input[type="password"]:focus,
+#adduser-page .form-container input[type="email"]:focus,
+#adduser-page .form-container select:focus {
+	border-color: #4CAF50;
+	outline: none;
+}
+
+/*Add User PHP Interface*/
+#adduser-page-php {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+#adduser-page-php .success-container {
+    width: 50%;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #4CAF50;
+}
+
+#adduser-page-php h2 {
+    color: #333;
+}
+
+#adduser-page-php .message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#adduser-page-php .message-success {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#adduser-page-php .redirect-message {
+    font-size: 16px;
+    color: #888;
+}
+
+#adduser-page-php .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#adduser-page-php .button:hover {
+    background-color: #45a049;
+}
