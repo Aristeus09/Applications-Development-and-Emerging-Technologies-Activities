@@ -65,7 +65,8 @@ while ($Row = mysqli_fetch_assoc($result)) {
 </tbody>
     </table>
     <div class="form-container">
-            <input type="submit" value="Proceed to Delete">
+			<button type="button" class="button" onclick="window.location.href='displaydatausers.php'">Back</button>
+            <button type="submit" class="button">Proceed to Delete</button>
         </div>
     </div> 
 </form>
